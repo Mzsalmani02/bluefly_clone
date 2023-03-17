@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>CREATE ACCOUNT</h1>
+      <form>
+        <label for="firstname">FIRST NAME</label>
+        <input type="text" id="firstname" name="firstname" required>
+        <label for="lastname">LAST NAME</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">CREATE</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  <script>
+    const signupForm = document.querySelector("form");
+    
+    signupForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+  
+      const firstnameInput = this.elements.firstname;
+      const lastnameInput = this.elements.lastname;
+      const emailInput = this.elements.email;
+      const passwordInput = this.elements.password;
+  
+      let accounts = JSON.parse(localStorage.getItem("account-data")) || [];
+  
+      if (accounts.find((account) => account.email === emailInput.value)) {
+        alert("Email already registered!");
+        return;
+      }
+  
+      const newAccount = {
+        firstname: firstnameInput.value,
+        lastname: lastnameInput.value,
+        email: emailInput.value,
+        password: passwordInput.value,
+      };
+  
+      accounts.push(newAccount);
+  
+      localStorage.setItem("account-data", JSON.stringify(accounts));
+  
+      alert("Account created successfully!");
+  
+      firstnameInput.value = "";
+      lastnameInput.value = "";
+      emailInput.value = "";
+      passwordInput.value = "";
+      
+      window.location.href = "login.html"; // Redirect to login page after account creation
+    });
+  </script>
+  
+</html>
