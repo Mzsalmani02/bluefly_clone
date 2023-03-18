@@ -21,6 +21,14 @@ body{
     animation: blackslide 3s linear infinite;
  }
   
+/* @keyframes blackslide{
+    0%{
+       margin-left: -100%;
+    }
+    50%{
+        
+    }
+} */
  #mainslider{
     height: 450px;
     background-image: url("images/11.webp");
@@ -335,25 +343,25 @@ hr+h1{
     }
   
 }
-@media all and (min-width:1250px){
+@media all and (max-width:150px){
     #dicount{
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
     #catogary{
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
     #catogary2{
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
     #catogary3{
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
     #discount2{
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
 }
