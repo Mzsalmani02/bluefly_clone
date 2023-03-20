@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Style the main content area */
+  main {
+    padding: 20px;
+  }
+  
+  /* Style the table */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the table footer */
+  table tfoot tr:first-child {
+    font-weight: bold;
+  }
+  
+  /* Style the checkout button */
+  a {
+    background-color: #333;
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+  }
+  
+  a:hover {
+    background-color: #666;
+  }
