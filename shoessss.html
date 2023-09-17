@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Designers</title>
+    <title>Bluefly</title>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="FootercartPopup.css" />
     <link
@@ -32,7 +32,7 @@
           
          <a href="login.html"><img src="images/login.png" alt="" /></a> 
 
-          <a href="CartPageNew.html"><img id="cartButton" src="images/bag.png" alt="" /></a>
+          <a href="Payment.html"><img id="cartButton" src="images/bag.png" alt="" /></a>
         </div>
       </div>
       <div id="menuheader">
@@ -199,7 +199,7 @@
             </a>
           </li>
           <li>
-            <a href="designers.html" class="shoes"
+            <a href="" class="shoes"
               >DESIGNERS
               <div class="shoes1">
                 <div>
@@ -645,7 +645,6 @@
       </div>
     </header>
 
-
     
 
     <!-------------------------- smal slider --------------------------------->
@@ -662,123 +661,102 @@
 
 
 
- <style>
-  h1 {
-    margin: 10px 0px 30px 0px;
-  }
-  
-  h5 {
-    text-justify: auto;
-  }
-  
-  #data {
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    display: flex;
-  }
-  
-  #leftpart {
-    width: 20%;
-  }
-  
-  #rightpart {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    width: 80%;
-  }
-  
-  #cards {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 20px;
-    text-align: center;
-  }
-  
-  #cards>img {
-    width: 90%;
-    border-radius: 20px;
-  }
-  
-  .priceBox {
-    vertical-align: bottom;
-    display: flex;
-    height: 30px;
-    margin-top: -20px;
-    justify-content: center;
-    margin-top: 5px;
-  }
-  
-  .MRP {
-    text-decoration: line-through;
-  }
-  
-  * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-  }
-  
-  #nav {
+    <style>
+      h1{
+        margin: 10px  0px 30px 0px;
+      }
+      h5{
+        text-justify: auto;
+      }
+        #data{
+          text-transform: uppercase;
+          letter-spacing: .2em;
+           
+           display: flex;
+            /* gap: 20px;
+            width: 100%;
+            justify-content: right; */
+        }
+        #leftpart{
+          width: 20%
+        }
+        #rightpart{
+         
+          display: grid;
+          
+          grid-template-columns: repeat(4, 1fr);
+          gap: 10px;
+        
+          width: 80%;
+        }
+
+        #cards{
+          padding:5px;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+            border-radius: 20px;
+            text-align: center;
+
+            
+        }
+       #cards>img{
+            width:90%;
+            border-radius: 20px;
+            /* height: 500px; */
+        }
+        .priceBox{
+          /* display: inline-block; */
+          vertical-align: bottom;
+         display: flex;
+           height: 30PX;
+           margin-top: -20px;
+         justify-content: center;
+           margin-top:5px ;
+        }
+        .MRP{
+            text-decoration: line-through;
+        }
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+        }
+      
+        #nav{
     display: flex;
     justify-content: space-around;
-  }
-  
-  #sortName {
-    
-    height: 50px;
-    margin-top: 20px;
-    width: 95%;
-  }
-  
-  #sortSalary {
-    width: 95%;
-    height: 50px;
-  }
-  
-  #filterRole {
-    width: 95%;
-    height: 50px;
-  }
-  
-  /* Media queries */
-  
-  @media only screen and (max-width: 1024px) {
-    #rightpart {
-      grid-template-columns: repeat(3, 1fr);
-      width: 85%;
-    }
-  }
-  
-  @media only screen and (max-width: 768px) {
-    #rightpart {
-      grid-template-columns: repeat(2, 1fr);
-      width: 80%;
-      
-    }
-    
-    #sortName,
-    #sortSalary,
-    #filterRole {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
-    #rightpart {
-      grid-template-columns: repeat(1, 1fr);
-      width: 100%;
-    }
-    
-    #leftpart {
-      width: 100%;
-      white-space: nowrap;
-    }
-  }
-</style>
+}
+#sortName{
+  height: 50px;
+margin-top: 20px;
 
+  width: 95%;
+}
+#sortSalary{
+ 
+
+  width: 95%;
+  height: 
+  50px;
+}
+#filterRole{
+
+  width: 95%;
+  height: 
+  50px;
+}
+@media all and (max-width:750px) {
+  #rightpart{
+         
+         display: grid;
+         
+         grid-template-columns: repeat(2, 1fr);
+         gap: 10px;
+       
+         width: 80%;
+       }
+}
+  </style>
 </head>
 <body>
   
@@ -817,284 +795,284 @@
   var shoesData = [
     {
       image_url:
-        "https://assets.ajio.com/medias/sys_master/root/20220111/aybh/61dda1a3f997dd66231b6371/-473Wx593H-410299985-3808-MODEL.jpg",
-      name: "Padded Chain Cassette Shoulder Bag",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313501778_RLLZ_1_900x.jpg?v=1678055858",
+      name: "GUCCI GG CANVAS OVER-THE-KNEE BOOT",
       price: 1549,
       strikedoffprice: 1799,
       discount:"50%",
-      company : "versace"
+      company : "bata"
     },
     {
       image_url:
-        "https://assets.ajio.com/medias/sys_master/root/20220926/nmBA/633158d2aeb269dbb3a60c13/-473Wx593H-410341816-170-MODEL.jpg",
-      name: "Heather Large Logo Shoulder Bag",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1311187163_RLLZ_1_900x.jpg?v=1678924497",
+      name: "COMMON PROJECT ORIGINAL ACHILLIES LEATHER SNEAKER",
       price: 1249,
       strikedoffprice: 1749,
       discount:"50%",
-      company : "versace"
+      company : "bata"
     },
     {
       image_url:
-        "https://assets.ajio.com/medias/sys_master/root/20220910/CkrU/631ba5c2f997dd1f8df3bde6/-473Wx593H-410245867-beige-MODEL.jpg",
-      name: "Logo Print Zip-Around Crossbody Bag",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/133512162_0f40152f-384d-4987-aeb0-863077a7bddf_900x.jpg?v=1676436087",
+      name: "ON RUNNING WOMEN's CLOUDACE RUNNING SHOES",
       price: 699,
       strikedoffprice: 1245,
       discount:"50%",
-      company : "versace"
+      company : "bata"
     },
     {
       image_url:
-        "https://assets.ajio.com/medias/sys_master/root/20221007/EOfQ/633f281ff997ddfdbd0a496e/-473Wx593H-410310906-b4udk-MODEL.jpg",
-       name: "Studio Shoulder Bag with Detachable Strap",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313502494_RLLZ_1_900x.jpg?v=1678797859",
+       name: "SAINT LAURENT TRIBUTE 75 PATENT PLATFORM SANDAL",
       price: 749,
       strikedoffprice: 1299,
       discount:"50%",
-      company : "versace"
+      company : "bata"
     },{
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313501778_RLLZ_1_900x.jpg?v=1678055858",
+      name: "GUCCI GG CANVAS OVER-THE-KNEE BOOT",
       price: 1549,
       strikedoffprice: 1799,
       discount:"50%",
-      company : "balmain"
+      company : "bata"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1311187163_RLLZ_1_900x.jpg?v=1678924497",
+      name: "COMMON PROJECT ORIGINAL ACHILLIES LEATHER SNEAKER",
       price: 1249,
       strikedoffprice: 1749,
       discount:"50%",
-      company:"dolce & gabbana"
+      company:"puma"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/133512162_0f40152f-384d-4987-aeb0-863077a7bddf_900x.jpg?v=1676436087",
+      name: "ON RUNNING WOMEN's CLOUDACE RUNNING SHOES",
       price: 699,
       strikedoffprice: 1245,
       discount:"50%",
-      company:"alexander mcqueen"
+      company:"puma"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313502494_RLLZ_1_900x.jpg?v=1678797859",
+       name: "SAINT LAURENT TRIBUTE 75 PATENT PLATFORM SANDAL",
       price: 749,
       strikedoffprice: 1299,
       discount:"50%",
-      company:"gucci"
+      company:"puma"
     },{
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313501778_RLLZ_1_900x.jpg?v=1678055858",
+      name: "GUCCI GG CANVAS OVER-THE-KNEE BOOT",
       price: 1549,
       strikedoffprice: 1799,
       discount:"50%",
-      company : "balmain"
+      company:"puma"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1311187163_RLLZ_1_900x.jpg?v=1678924497",
+      name: "COMMON PROJECT ORIGINAL ACHILLIES LEATHER SNEAKER",
       price: 1249,
       strikedoffprice: 1749,
       discount:"50%",
-      company:"dolce & gabbana"
+      company:"puma"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/133512162_0f40152f-384d-4987-aeb0-863077a7bddf_900x.jpg?v=1676436087",
+      name: "ON RUNNING WOMEN's CLOUDACE RUNNING SHOES",
       price: 699,
       strikedoffprice: 1245,
       discount:"50%",
-      company:"alexander mcqueen"
+      company:"adidas"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313502494_RLLZ_1_900x.jpg?v=1678797859",
+       name: "SAINT LAURENT TRIBUTE 75 PATENT PLATFORM SANDAL",
       price: 749,
       strikedoffprice: 1299,
       discount:"50%",
-      company:"gucci"
+      company:"adidas"
     },{
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313501778_RLLZ_1_900x.jpg?v=1678055858",
+      name: "GUCCI GG CANVAS OVER-THE-KNEE BOOT",
       price: 1549,
       strikedoffprice: 1799,
       discount:"50%",
-      company : "balmain"
+      company:"adidas"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1311187163_RLLZ_1_900x.jpg?v=1678924497",
+      name: "COMMON PROJECT ORIGINAL ACHILLIES LEATHER SNEAKER",
       price: 1249,
       strikedoffprice: 1749,
       discount:"50%",
-      company:"dolce & gabbana"
+      company:"adidas"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/133512162_0f40152f-384d-4987-aeb0-863077a7bddf_900x.jpg?v=1676436087",
+      name: "ON RUNNING WOMEN's CLOUDACE RUNNING SHOES",
       price: 699,
       strikedoffprice: 1245,
       discount:"50%",
-      company:"alexander mcqueen"
+      company:"adidas"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313502494_RLLZ_1_900x.jpg?v=1678797859",
+       name: "SAINT LAURENT TRIBUTE 75 PATENT PLATFORM SANDAL",
       price: 749,
       strikedoffprice: 1299,
       discount:"50%",
-      company:"gucci"
+      company:"nike"
     },{
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313501778_RLLZ_1_900x.jpg?v=1678055858",
+      name: "GUCCI GG CANVAS OVER-THE-KNEE BOOT",
       price: 1549,
       strikedoffprice: 1799,
       discount:"50%",
-      company : "balmain"
+      company:"nike"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1311187163_RLLZ_1_900x.jpg?v=1678924497",
+      name: "COMMON PROJECT ORIGINAL ACHILLIES LEATHER SNEAKER",
       price: 1249,
       strikedoffprice: 1749,
       discount:"50%",
-      company:"dolce & gabbana"
+      company:"nike"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/133512162_0f40152f-384d-4987-aeb0-863077a7bddf_900x.jpg?v=1676436087",
+      name: "ON RUNNING WOMEN's CLOUDACE RUNNING SHOES",
       price: 699,
       strikedoffprice: 1245,
       discount:"50%",
-      company:"alexander mcqueen"
+      company:"nike"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313502494_RLLZ_1_900x.jpg?v=1678797859",
+       name: "SAINT LAURENT TRIBUTE 75 PATENT PLATFORM SANDAL",
       price: 749,
       strikedoffprice: 1299,
       discount:"50%",
-      company:"gucci"
+      company:"nike"
     },{
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313501778_RLLZ_1_900x.jpg?v=1678055858",
+      name: "GUCCI GG CANVAS OVER-THE-KNEE BOOT",
       price: 1549,
       strikedoffprice: 1799,
       discount:"50%",
-      company : "balmain"
+      company:"nike"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1311187163_RLLZ_1_900x.jpg?v=1678924497",
+      name: "COMMON PROJECT ORIGINAL ACHILLIES LEATHER SNEAKER",
       price: 1249,
       strikedoffprice: 1749,
       discount:"50%",
-      company:"dolce & gabbana"
+      company:"nike"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/133512162_0f40152f-384d-4987-aeb0-863077a7bddf_900x.jpg?v=1676436087",
+      name: "ON RUNNING WOMEN's CLOUDACE RUNNING SHOES",
       price: 699,
       strikedoffprice: 1245,
       discount:"50%",
-      company:"alexander mcqueen"
+      company:"nike"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313502494_RLLZ_1_900x.jpg?v=1678797859",
+       name: "SAINT LAURENT TRIBUTE 75 PATENT PLATFORM SANDAL",
       price: 749,
       strikedoffprice: 1299,
       discount:"50%",
-      company:"gucci"
+      company:"nike"
     },{
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313501778_RLLZ_1_900x.jpg?v=1678055858",
+      name: "GUCCI GG CANVAS OVER-THE-KNEE BOOT",
       price: 1549,
       strikedoffprice: 1799,
       discount:"50%",
-      company : "balmain"
+      company:"nike"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1311187163_RLLZ_1_900x.jpg?v=1678924497",
+      name: "COMMON PROJECT ORIGINAL ACHILLIES LEATHER SNEAKER",
       price: 1249,
       strikedoffprice: 1749,
       discount:"50%",
-      company:"dolce & gabbana"
+      company:"nike"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/133512162_0f40152f-384d-4987-aeb0-863077a7bddf_900x.jpg?v=1676436087",
+      name: "ON RUNNING WOMEN's CLOUDACE RUNNING SHOES",
       price: 699,
       strikedoffprice: 1245,
       discount:"50%",
-      company:"alexander mcqueen"
+      company:"nike"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313502494_RLLZ_1_900x.jpg?v=1678797859",
+       name: "SAINT LAURENT TRIBUTE 75 PATENT PLATFORM SANDAL",
       price: 749,
       strikedoffprice: 1299,
       discount:"50%",
-      company:"gucci"
+      company:"nike"
     },{
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313501778_RLLZ_1_900x.jpg?v=1678055858",
+      name: "GUCCI GG CANVAS OVER-THE-KNEE BOOT",
       price: 1549,
       strikedoffprice: 1799,
       discount:"50%",
-      company : "balmain"
+      company:"nike"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1311187163_RLLZ_1_900x.jpg?v=1678924497",
+      name: "COMMON PROJECT ORIGINAL ACHILLIES LEATHER SNEAKER",
       price: 1249,
       strikedoffprice: 1749,
       discount:"50%",
-      company:"dolce & gabbana"
+      company:"nike"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/133512162_0f40152f-384d-4987-aeb0-863077a7bddf_900x.jpg?v=1676436087",
+      name: "ON RUNNING WOMEN's CLOUDACE RUNNING SHOES",
       price: 699,
       strikedoffprice: 1245,
       discount:"50%",
-      company:"alexander mcqueen"
+      company:"nike"
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313502494_RLLZ_1_900x.jpg?v=1678797859",
+       name: "SAINT LAURENT TRIBUTE 75 PATENT PLATFORM SANDAL",
       price: 749,
       strikedoffprice: 1299,
       discount:"50%",
-      company:"gucci"
+      company:"nike"
     },
     
 

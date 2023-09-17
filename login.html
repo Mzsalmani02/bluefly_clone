@@ -33,7 +33,7 @@
           
          <a href="login.html"><img src="images/login.png" alt="" /></a> 
 
-          <a href="Payment.html"><img id="cartButton" src="images/bag.png" alt="" /></a>
+          <a href="CartPageNew.html"><img id="cartButton" src="images/bag.png" alt="" /></a>
         </div>
       </div>
       <div id="menuheader">
@@ -200,7 +200,7 @@
             </a>
           </li>
           <li>
-            <a href="" class="shoes"
+            <a href="designers.html" class="shoes"
               >DESIGNERS
               <div class="shoes1">
                 <div>
@@ -646,6 +646,8 @@
       </div>
     </header>
 
+
+
     
 
     <!-------------------------- smal slider --------------------------------->
@@ -789,7 +791,7 @@ function subscribe(event) {
   event.preventDefault();
   let data = document.querySelector("#email").value;
   subscriberdata.push(data);
-  alert("Subscribe Succesfully")
+  // alert("Subscribe Succesfully")
  localStorage.setItem("emaildata",JSON.stringify(subscriberdata))
  document.querySelector("#email").value = ""
  

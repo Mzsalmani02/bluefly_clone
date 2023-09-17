@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womens</title>
+    <style>
+        #data{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+        #cards{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+            border-radius: 20px;
+        }
+        .priceBox{
+           display: flex;
+           justify-content: space-around;
+           height: 30PX;
+           margin-top: -20px;
+           align-items:center;
+        }
+        .MRP{
+            text-decoration: line-through;
+        }
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* font-size: large; */
+        }
+        button{
+            margin-bottom: 20px;
+        }
+        #nav{
+    display: flex;
+    justify-content: space-around;
+}
+    </style>
+</head>
+<body>
+  <h1>Womens page</h1>
+  <a href="mens.html"><h2>Mens page</h2></a>
+  <a href="cart.html"><h2>Go to Cart</h2></a>
+    <div id="data"></div>
+</body>
+</html>
+<script>
+   var womensData = [
+    {
+      image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1549,
+      strikedoffprice: 1799,
+    },
+    {
+      image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/789162-9227253.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK POLYTIGHT",
+      price: 1249,
+      strikedoffprice: 1749,
+    },
+    {
+      image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK SLEEVE TEE",
+      price: 699,
+      strikedoffprice: 1245,
+    },
+    {
+      image_url:
+      "https://imagescdn.reebok.in/img/app/product/7/769365-8844708.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PP TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+      image_url:
+       " https://imagescdn.reebok.in/img/app/product/7/789162-9227256.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PP TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1399,
+      strikedoffprice: 2799,
+    },
+    {
+      image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 1099,
+      strikedoffprice: 1249,
+    },
+    {
+      image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/859469-10134572.jpg?auto=format&w=191.8125",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 1249,
+      strikedoffprice: 1489,
+    },
+    {
+      image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S CLASSIC REEBOK PANTS",
+      price: 1459,
+      strikedoffprice: 1235,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 849,
+      strikedoffprice: 2599,
+    },
+    {
+      image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1550,
+      strikedoffprice: 2599,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1399,
+      strikedoffprice: 6599,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 949,
+      strikedoffprice: 1899,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1549,
+      strikedoffprice: 1799,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/859469-10134572.jpg?auto=format&w=191.8125",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 1249,
+      strikedoffprice: 1749,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 699,
+      strikedoffprice: 1245,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/859469-10134572.jpg?auto=format&w=191.8125",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 1399,
+      strikedoffprice: 2799,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1099,
+      strikedoffprice: 1249,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 1249,
+      strikedoffprice: 1489,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1459,
+      strikedoffprice: 1235,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/859469-10134572.jpg?auto=format&w=191.8125",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 849,
+      strikedoffprice: 2599,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1550,
+      strikedoffprice: 2599,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 1399,
+      strikedoffprice: 6599,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 949,
+      strikedoffprice: 1899,
+    },
+    {
+      image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1549,
+      strikedoffprice: 1799,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1249,
+      strikedoffprice: 1749,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 699,
+      strikedoffprice: 1245,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/859469-10134572.jpg?auto=format&w=191.8125",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1399,
+      strikedoffprice: 2799,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 1099,
+      strikedoffprice: 1249,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1249,
+      strikedoffprice: 1489,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/859469-10134572.jpg?auto=format&w=191.8125",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 1459,
+      strikedoffprice: 1235,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 849,
+      strikedoffprice: 2599,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 1550,
+      strikedoffprice: 2599,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1399,
+      strikedoffprice: 6599,
+    },
+    {
+      image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/859469-10134572.jpg?auto=format&w=191.8125",
+      name: "UNISEX REEBOK TRAINING ACTIVE CORE BACKPACK - MEDIUM",
+      price: 949,
+      strikedoffprice: 1899,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1549,
+      strikedoffprice: 1799,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1249,
+      strikedoffprice: 1749,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/859469-10134572.jpg?auto=format&w=191.8125",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 699,
+      strikedoffprice: 1245,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1399,
+      strikedoffprice: 2799,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/859469-10134572.jpg?auto=format&w=191.8125",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 1099,
+      strikedoffprice: 1249,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1249,
+      strikedoffprice: 1489,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 1459,
+      strikedoffprice: 1235,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 849,
+      strikedoffprice: 2599,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/859469-10134572.jpg?auto=format&w=191.8125",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 1550,
+      strikedoffprice: 2599,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1399,
+      strikedoffprice: 6599,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 949,
+      strikedoffprice: 1899,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1549,
+      strikedoffprice: 1799,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1249,
+      strikedoffprice: 1749,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/859469-10134572.jpg?auto=format&w=191.8125",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 699,
+      strikedoffprice: 1245,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+     image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1399,
+      strikedoffprice: 2799,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/859469-10134572.jpg?auto=format&w=191.8125",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 1099,
+      strikedoffprice: 1249,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 1249,
+      strikedoffprice: 1489,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1459,
+      strikedoffprice: 1235,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/859469-10134572.jpg?auto=format&w=191.8125",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 849,
+      strikedoffprice: 2599,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/798096-9393967.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1550,
+      strikedoffprice: 2599,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/7/797823-9386730.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 1399,
+      strikedoffprice: 6599,
+    },
+    {
+        image_url:
+        "https://imagescdn.reebok.in/img/app/product/8/800267-9443703.jpg?auto=format&w=191.8125",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 949,
+      strikedoffprice: 1899,
+    },
+  ];
+    display();
+
+    function display(){
+        womensData.map(function(ele){
+            var div = document.createElement("div")
+            var image = document.createElement("img")
+            image.setAttribute("src", ele.image_url)
+            image.setAttribute("alt", ele.name)
+
+            var h5 = document.createElement("h5")
+            h5.textContent = ele.name
+        
+            var priceBox = document.createElement("div")
+                var price = document.createElement("p")
+                price.textContent = "₹"+ ele.price
+
+                var MRP = document.createElement("p")
+                MRP.textContent = "₹"+ ele.strikedoffprice
+            priceBox.setAttribute("class", "priceBox");
+            MRP.setAttribute("class", "MRP")
+            priceBox.append(price, MRP)
+
+
+            var cartbtn = document.createElement("button")
+            cartbtn.textContent = "Add to Cart"
+            cartbtn.addEventListener("click", function(){
+              addtocart(ele)
+            });
+
+            div.append(image,h5,priceBox,cartbtn)
+            div.setAttribute("Id","cards")
+
+            document.querySelector("#data").append(div)
+        });
+    }
+
+    var cartArr = JSON.parse(localStorage.getItem("cart")) || []
+    function addtocart(ele){
+      cartArr.push(ele)
+           localStorage.setItem("cart", JSON.stringify(cartArr));
+    }
+</script>

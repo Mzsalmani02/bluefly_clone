@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bluefly</title>
+    <title>Under50</title>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="FootercartPopup.css" />
     <link
@@ -32,7 +32,7 @@
           
          <a href="login.html"><img src="images/login.png" alt="" /></a> 
 
-          <a href="Payment.html"><img id="cartButton" src="images/bag.png" alt="" /></a>
+          <a href="CartPageNew.html"><img id="cartButton" src="images/bag.png" alt="" /></a>
         </div>
       </div>
       <div id="menuheader">
@@ -199,7 +199,7 @@
             </a>
           </li>
           <li>
-            <a href="" class="shoes"
+            <a href="designers.html" class="shoes"
               >DESIGNERS
               <div class="shoes1">
                 <div>
@@ -645,6 +645,8 @@
       </div>
     </header>
 
+
+
     
 
     <!-------------------------- smal slider --------------------------------->
@@ -661,102 +663,123 @@
 
 
 
-    <style>
-      h1{
-        margin: 10px  0px 30px 0px;
-      }
-      h5{
-        text-justify: auto;
-      }
-        #data{
-          text-transform: uppercase;
-          letter-spacing: .2em;
-           
-           display: flex;
-            /* gap: 20px;
-            width: 100%;
-            justify-content: right; */
-        }
-        #leftpart{
-          width: 20%
-        }
-        #rightpart{
-         
-          display: grid;
-          
-          grid-template-columns: repeat(4, 1fr);
-          gap: 10px;
-        
-          width: 80%;
-        }
-
-        #cards{
-          padding:5px;
-           display: flex;
-           flex-direction: column;
-           justify-content: space-between;
-            border-radius: 20px;
-            text-align: center;
-
-            
-        }
-       #cards>img{
-            width:90%;
-            border-radius: 20px;
-            /* height: 500px; */
-        }
-        .priceBox{
-          /* display: inline-block; */
-          vertical-align: bottom;
-         display: flex;
-           height: 30PX;
-           margin-top: -20px;
-         justify-content: center;
-           margin-top:5px ;
-        }
-        .MRP{
-            text-decoration: line-through;
-        }
-        *{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: large;
-        }
-      
-        #nav{
+ <style>
+  h1 {
+    margin: 10px 0px 30px 0px;
+  }
+  
+  h5 {
+    text-justify: auto;
+  }
+  
+  #data {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    display: flex;
+  }
+  
+  #leftpart {
+    width: 20%;
+  }
+  
+  #rightpart {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 80%;
+  }
+  
+  #cards {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  #cards>img {
+    width: 90%;
+    border-radius: 20px;
+  }
+  
+  .priceBox {
+    vertical-align: bottom;
+    display: flex;
+    height: 30px;
+    margin-top: -20px;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .MRP {
+    text-decoration: line-through;
+  }
+  
+  * {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+  }
+  
+  #nav {
     display: flex;
     justify-content: space-around;
-}
-#sortName{
-  height: 50px;
-margin-top: 20px;
+  }
+  
+  #sortName {
+    
+    height: 50px;
+    margin-top: 20px;
+    width: 95%;
+  }
+  
+  #sortSalary {
+    width: 95%;
+    height: 50px;
+  }
+  
+  #filterRole {
+    width: 95%;
+    height: 50px;
+  }
+  
+  /* Media queries */
+  
+  @media only screen and (max-width: 1024px) {
+    #rightpart {
+      grid-template-columns: repeat(3, 1fr);
+      width: 85%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #rightpart {
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+      
+    }
+    
+    #sortName,
+    #sortSalary,
+    #filterRole {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    #rightpart {
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+    }
+    
+    #leftpart {
+      width: 100%;
+      white-space: nowrap;
+    }
+  }
+</style>
 
-  width: 95%;
-}
-#sortSalary{
- 
-
-  width: 95%;
-  height: 
-  50px;
-}
-#filterRole{
-
-  width: 95%;
-  height: 
-  50px;
-}
-@media all and (max-width:750px) {
-  #rightpart{
-         
-         display: grid;
-         
-         grid-template-columns: repeat(2, 1fr);
-         gap: 10px;
-       
-         width: 80%;
-       }
-}
-  </style>
 </head>
 <body>
   
@@ -777,10 +800,10 @@ margin-top: 20px;
       <hr>
       <select id="filterRole" onchange="handleRoleFilter()"> 
         <option value="">filter by Company</option>
-        <option value="moschino">Moschino</option>
-        <option value="prada">Prada</option>
-        <option value="bcbgmaxazria">Bcbgmaxazria</option>
-        <option value="michaelkors">Michaelkors</option>
+        <option value="nike">Nike</option>
+        <option value="bata">Bata</option>
+        <option value="puma">Puma</option>
+        <option value="adidas">Adidas</option>
       </select>
       <hr>
       </select>

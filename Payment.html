@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        #container {
+            display: flex;
+            /* flex-direction: column; */
+            width: 100%;
+        }
+
+        #content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #left-side {
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        /* #right-side {
+            width: 50%;
+            background-color: #fafafa;
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+        /* } */ 
+
+        .inpData {
+            display: block;
+            width: 500px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .inpData2 {
+            margin-top: -3px;
+            width: 244px;
+            height: 40px;
+        }
+
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        #botLen {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #btnPay {
+            background-color: black;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            height: 60px;
+            width: 180px;
+            border-radius: 5px;
+        }
+
+        @media only screen and (min-width: 421px) and (max-width: 720px) {
+            #container {
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+            #left-side {
+                width: 100%;
+            }
+
+            #lfd {
+                width: 90%;
+            }
+
+            #right-side {
+                width: 100%;
+            }
+
+            #button {
+                width: 120px;
+                height: 50px;
+            }
+        }
+
+        @media only screen and (min-width: 0px) and (max-width: 420px) {
+
+            #container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #left-side {
+                width: 100%;
+            }
+
+            #lfd {
+                width: 90%;
+            }
+
+          
+
+           
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="index.html">
+            <img id="image" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?233294"
+                alt="index.html">
+        </a>
+    </div>
+    <div id="container">
+        <div id="left-side">
+            <div id="lfd">
+                <br>
+                <form>
+                    <table border="1"
+                        style="border-collapse: collapse; border-radius: 15px !important; width: 100%; height: 120px;"
+                        id="tabBorder">
+                        <!-- <div id="tabBorder"> -->
+                        <tbody id="tb1"></tbody>
+                        <!-- </div> -->
+                    </table>
+                </form>
+                <div>
+                    <form id="form">
+                        <h2>Payment</h2>
+                        <h4>All transactions are secure and encrypted.</h4>
+                        <div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Credit card</td>
+                                    </tr>
+
+                                    <div id="credit">
+                                        <tr>
+                                            <td>
+                                                <input type="text" class="inpData" placeholder="Card number"
+                                                    id="creditRadio">
+                                                <input type="text" class="inpData" placeholder="Name on card"
+                                                    id="paypalRadio">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="date">
+                                                <input type="text" class="inpData2"
+                                                    placeholder="Expiration date (MM / YY)">
+                                                <input type="text" class="inpData2" id="newData"
+                                                    placeholder="Security code">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                    </div>
+                                    <tr>
+                        </div>
+
+                        </tr>
+                        </thead>
+                        </table>
+                </div>
+                <div id="botLen">
+                    <!-- <span><i class="arrow left"></i></span> -->
+                    <a href="Information.html" style="text-decoration:none; color:black;">
+                        
+                        <h4><span><i class="arrow left"></i></span> Return to information</h4>
+                    </a>
+                    <button id="btnPay">Pay now</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="right-side">
+        <h2>Shopping Cart</h2>
+                <div id="body">
+                    <div id="products">
+                        <table>
+                            <tbody id="tb">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="total_price">
+                        <div id="Offer">
+                            <div>
+                        <p>Apply Promo Code</p>
+                        <input type="text" id="promo">
+                        <button>Check</button>
+                    </div> <br>
+                        </div>
+                        <div id="total_items">
+                            <h5>Total items - <span id="items"></span></h5>
+                            <h3>Total Price - ₹ <span id="total"></span></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div id="payment">
+                    <button id="btnPay"><a href="Payment.html">
+                        Proceed to Payment</a>
+                    </button>
+                </div> -->
+    </div>
+    </div>
+    </div> -->
+    </div>
+</body>
+
+</html>
+<script>
+    var dispData = JSON.parse(localStorage.getItem("information")) || [];
+    console.log(dispData);
+    dataBase(dispData);
+
+    document.getElementById("form").addEventListener("submit", data)
+
+    function emptyOrNot(credit, name, date, otp) {
+        if (credit == "" || name == "" || date == "" || otp == "") {
+            alert("Fill all the Fields!");
+        }
+        else if (otp == 1234) {
+            alert("Payment Successfull.")
+            window.location.href=("index.html")
+        } else {
+            alert("Invalid Details!");
+        }
+    }
+
+    function data() {
+        event.preventDefault();
+        var credit = document.querySelector("#creditRadio").value;
+        var name = document.querySelector("#paypalRadio").value;
+        var date = document.querySelector(".inpData2").value;
+        var otp = document.querySelector("#newData").value;
+
+        var obj = {
+            credit: credit,
+            name: name,
+            date: date,
+            otp: otp
+        }
+        console.log(obj);
+        emptyOrNot(credit, name, date, otp);
+    }
+
+    function dataBase(dispData) {
+        var tb = document.querySelector("#tb1")
+        tb.textContent = "";
+        for (var i = 0; i < 1; i++) {
+            var elem = dispData[dispData.length - 1];
+            var tr1 = document.createElement("tr");
+            var td1 = document.createElement("td");
+            td1.textContent = "Contact";
+
+            var td2 = document.createElement("td");
+            td2.textContent = "  " + elem.email;
+
+            var tr2 = document.createElement("tr");
+            var td3 = document.createElement("td");
+            td3.textContent = "Ship to"
+
+            var td4 = document.createElement("td");
+            td4.textContent = "  " + elem.address;
+
+            var tr3 = document.createElement("tr");
+            var td5 = document.createElement("td");
+            td5.textContent = "Method"
+
+            var td6 = document.createElement("td");
+            td6.textContent = "  Standard";
+            tr1.append(td1, td2);
+            tr2.append(td3, td4);
+            tr3.append(td5, td6);
+            tb.append(tr1, tr2, tr3);
+        }
+        // var payButton = document.querySelector("button").addEventListener("click", pivot);
+
+        // function pivot(){
+
+        // }
+    }
+</script>

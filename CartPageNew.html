@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Designers</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="FootercartPopup.css" />
     <link
@@ -199,7 +200,7 @@
             </a>
           </li>
           <li>
-            <a href="designers.html" class="shoes"
+            <a href="" class="shoes"
               >DESIGNERS
               <div class="shoes1">
                 <div>
@@ -646,6 +647,9 @@
     </header>
 
 
+
+
+
     
 
     <!-------------------------- smal slider --------------------------------->
@@ -655,646 +659,865 @@
     </div>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+    <link rel="stylesheet" href="cartPage.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/423552aade.js" crossorigin="anonymous"></script>
 
- <!-- -------------------------Header Section------------------------- -->
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/423552aade.js" crossorigin="anonymous"></script>
+    <style>
+      
 
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: rgb(239,247,250);
+}
 
+/* div{
+    border: 1px solid black;
+} */
 
+.header{
+    height: 65px;
+    background-color: white;
+}
 
+.headerImg{
+    width: 10%;
+    margin-left: 10px;
+    height: auto;
+}
 
- <style>
-  h1 {
-    margin: 10px 0px 30px 0px;
-  }
-  
-  h5 {
-    text-justify: auto;
-  }
-  
-  #data {
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    display: flex;
-  }
-  
-  #leftpart {
-    width: 20%;
-  }
-  
-  #rightpart {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    width: 80%;
-  }
-  
-  #cards {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 20px;
+.pDiv{
+   
+    width: 98%;
+    margin: auto;
+    /* height: 100%; */
+    margin-top: 20px;
+    background-color: white;
+}
+
+.pDiv>div>h2{
+    padding: 20px;
+    font-weight: 500;
+    line-height: 34.28px;
+    padding-top: 25px;
+    font-size: 24px;
+}
+
+.productsDiv{
+    border-top: 1px solid rgb(236, 236, 236);
+    height: 60%;
+    
+}
+
+.productsDiv>img{
+    margin-left: 600px;
+    margin-top: 40px;
+    width: 110px;
+}
+
+.productsDiv>p{
     text-align: center;
-  }
-  
-  #cards>img {
-    width: 90%;
-    border-radius: 20px;
-  }
-  
-  .priceBox {
-    vertical-align: bottom;
+    color: rgb(168, 167, 167);
+    font-size: 15px;
+}
+
+.arrow{
+    margin-left: 100px;
+    margin-top: 15px;
+    width: 30px;
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+
+.imgD{
+    margin-top: 8px;
+    /* height: 98px; */
+    width: 120px;
     display: flex;
-    height: 30px;
-    margin-top: -20px;
     justify-content: center;
-    margin-top: 5px;
-  }
+}
+
+.imgLink{
+    width: 100%;
+}
+
+.p_title{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 453.6px;
+    height: 48.56px;
+}
+
+.p_name{
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color:rgb(168, 167, 167);
+    cursor:pointer;
+}
+
+.p_quantity{
+    margin-top: 10px;
+    width: 155.51px;
+    height: 54.01px;
+}
+
+.s_size{
+    line-height: 18.57px;
+    font-size: 13px;
+}
+
+.minus{
+    margin-left: 3px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.remove{
+    color:rgb(14, 164, 194);
+    line-height: 18.57px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.plus{
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.quantity{
+    line-height: 22.58px;
+    margin-left: 10px;
+}
+
+.priceD{
+    margin-top: 10px;
+    margin-left: 20px;
+    
+    width: 325px;
+    
+}
+
+.price{
+    /* margin-left: 230px; */
+    color:rgb(168, 167, 167);
+    line-height: 18.57px;
+    font-size: 13px;
+ 
+}
+
+.discount{
+    /* margin-left: 208px; */
+    color:rgb(168, 167, 167);
+    line-height: 18.57px;
+    font-size: 13px;
+   
+}
+
+.shipping_fee{
+    /* margin-left: 185px; */
+    color:rgb(168, 167, 167);
+    line-height: 18.57px;
+    font-size: 13px;
+    
+    
+}
+
+.pricespan{
+    font-weight: bolder;
+    line-height: 18.57px;
+    font-size: 13px;
+}
+
+.discountspan{
+    font-weight: bolder;
+    line-height: 18.57px;
+    font-size: 13px;
+}
+
+.shippingspan{
+    font-weight: bolder;
+    line-height: 18.57px;
+    font-size: 13px;
+}
+
+.tPrice{
+    /* margin-left: 70px; */
+
+    font-size: 18px;
+    line-height: 0px;
+    font-weight: bolder;
+    width: 20%;
+}
+
+.tpDiv{
+    margin-top: 10px;
+    margin-left: 72px;
+    width: 142.55px;
+    height: 54.26px;
+}
+
+.pRules{
+    /* text-align: right; */
+
+    margin-right: 5px;
+    line-height: 14.28px;
+    font-size: 10px;
+}
+
+.pD{
+display: flex;
+    width: 100% ;
+   
   
-  .MRP {
-    text-decoration: line-through;
-  }
-  
-  * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-  }
-  
-  #nav {
+
+}
+
+hr{
+    border-top: 1px solid rgb(236, 236, 236);
+}
+
+.grandTotalDiv{
+    border-top: 4px solid rgb(236, 236, 236);
+    width: 95%;
+    height: 100px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
+}
+
+.locationDiv{
+    width: 155.09px;
+    height: 52px;
+    display: flex;
+    margin: 25px;
+}
+
+.locationImg{
+    margin-top: 10px;
+    width: 32px;
+    height: 34px;
+}
+
+.delivery{
+    width: 75%;
+    margin-left: 5px;
+}
+
+.delivery>p{
+    line-height: 0px;
+    font-size: 15px;
+    color:rgb(168, 167, 167);
+}
+
+.delivery>span{
+    font-size: 15px;
+}
+
+.locationChange{  
+    color: rgb(14, 164, 194);
+    cursor: pointer;
+}
+
+.GTotalDiv{
     display: flex;
     justify-content: space-around;
-  }
-  
-  #sortName {
+    align-items: center;
+    width: 100%;
+    height: 100px;
     
-    height: 50px;
-    margin-top: 20px;
-    width: 95%;
-  }
-  
-  #sortSalary {
-    width: 95%;
-    height: 50px;
-  }
-  
-  #filterRole {
-    width: 95%;
-    height: 50px;
-  }
-  
-  /* Media queries */
-  
-  @media only screen and (max-width: 1024px) {
-    #rightpart {
-      grid-template-columns: repeat(3, 1fr);
-      width: 85%;
-    }
-  }
-  
-  @media only screen and (max-width: 768px) {
-    #rightpart {
-      grid-template-columns: repeat(2, 1fr);
-      width: 80%;
-      
-    }
     
-    #sortName,
-    #sortSalary,
-    #filterRole {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
-    #rightpart {
-      grid-template-columns: repeat(1, 1fr);
-      width: 100%;
-    }
-    
-    #leftpart {
-      width: 100%;
-      white-space: nowrap;
-    }
-  }
-</style>
+}
 
+/* .tP{
+    line-height: 22.85px;
+} */
+
+.gTotal{
+    
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.place{
+    margin-top: 15px;
+    
+    height: 60px;
+  
+  
+    box-shadow: 0px 2px 8px 0px rgba(43, 40, 40, 0.46);
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .place{
+   
+   
+    height: 60px;
+    font-size: 15px;
+   
+}
+.rules{
+  display: none;
+}
+.s_size {
+   display: none;
+}
+.pRules{
+  display: none;
+}
+.pD{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tPrice {
+   
+    
+    margin-left: -60px;
+    font-weight: bolder;
+    width:100%;
+}
+.priceD {
+    display: none;
+    width: 100px;
+    
+}
+.p_quantity {
+    margin-top: -10px;
+    width: 155.51px;
+    height: 50px;
+}
+}
+
+/* Make images responsive */
+
+
+    </style>
 </head>
 <body>
-  
- 
-  <div id="data">
-    <div id="leftpart">
-      <select id="sortName" onchange="handleNameSort()">
-        <option value="">Sort by Name</option>
-        <option value="ascending">Ascending</option>
-        <option value="descending">Descending</option>
-      </select>
-      <hr>
-      <select id="sortSalary" onchange="handleSalarySort()">
-        <option value="">Sort by Salary</option>
-        <option value="htl">High to Low</option>
-        <option value="lth">Low to High</option>
-      </select>
-      <hr>
-      <select id="filterRole" onchange="handleRoleFilter()"> 
-        <option value="">filter by Company</option>
-        <option value="nike">Nike</option>
-        <option value="bata">Bata</option>
-        <option value="puma">Puma</option>
-        <option value="adidas">Adidas</option>
-      </select>
-      <hr>
-      </select>
+
+
+     <!-- <a href="information.html">Proceed to checkout</a> -->
+
+     <div class="pDiv">
+        <div>
+            <h2>My Cart</h2>
+        </div>
+        <div class="productsDiv">
+        </div>
     </div>
-    <div id="rightpart"></div>
-  </div>
-
+    <div class="grandTotalDiv">
+        
+         
+        <div class="GTotalDiv">
+            
+        </div>
+    </div>
+    <!-- footer strt -->
+  <!--  -->
+    <!--footer end  -->
 </body>
-
 </html>
 <script>
-  var shoesData = [
-    {
-      image_url:
-        "https://assets.ajio.com/medias/sys_master/root/20220111/aybh/61dda1a3f997dd66231b6371/-473Wx593H-410299985-3808-MODEL.jpg",
-      name: "Padded Chain Cassette Shoulder Bag",
-      price: 1549,
-      strikedoffprice: 1799,
-      discount:"50%",
-      company : "versace"
-    },
-    {
-      image_url:
-        "https://assets.ajio.com/medias/sys_master/root/20220926/nmBA/633158d2aeb269dbb3a60c13/-473Wx593H-410341816-170-MODEL.jpg",
-      name: "Heather Large Logo Shoulder Bag",
-      price: 1249,
-      strikedoffprice: 1749,
-      discount:"50%",
-      company : "versace"
-    },
-    {
-      image_url:
-        "https://assets.ajio.com/medias/sys_master/root/20220910/CkrU/631ba5c2f997dd1f8df3bde6/-473Wx593H-410245867-beige-MODEL.jpg",
-      name: "Logo Print Zip-Around Crossbody Bag",
-      price: 699,
-      strikedoffprice: 1245,
-      discount:"50%",
-      company : "versace"
-    },
-    {
-      image_url:
-        "https://assets.ajio.com/medias/sys_master/root/20221007/EOfQ/633f281ff997ddfdbd0a496e/-473Wx593H-410310906-b4udk-MODEL.jpg",
-       name: "Studio Shoulder Bag with Detachable Strap",
-      price: 749,
-      strikedoffprice: 1299,
-      discount:"50%",
-      company : "versace"
-    },{
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
-      price: 1549,
-      strikedoffprice: 1799,
-      discount:"50%",
-      company : "balmain"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
-      price: 1249,
-      strikedoffprice: 1749,
-      discount:"50%",
-      company:"dolce & gabbana"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
-      price: 699,
-      strikedoffprice: 1245,
-      discount:"50%",
-      company:"alexander mcqueen"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
-      price: 749,
-      strikedoffprice: 1299,
-      discount:"50%",
-      company:"gucci"
-    },{
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
-      price: 1549,
-      strikedoffprice: 1799,
-      discount:"50%",
-      company : "balmain"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
-      price: 1249,
-      strikedoffprice: 1749,
-      discount:"50%",
-      company:"dolce & gabbana"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
-      price: 699,
-      strikedoffprice: 1245,
-      discount:"50%",
-      company:"alexander mcqueen"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
-      price: 749,
-      strikedoffprice: 1299,
-      discount:"50%",
-      company:"gucci"
-    },{
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
-      price: 1549,
-      strikedoffprice: 1799,
-      discount:"50%",
-      company : "balmain"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
-      price: 1249,
-      strikedoffprice: 1749,
-      discount:"50%",
-      company:"dolce & gabbana"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
-      price: 699,
-      strikedoffprice: 1245,
-      discount:"50%",
-      company:"alexander mcqueen"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
-      price: 749,
-      strikedoffprice: 1299,
-      discount:"50%",
-      company:"gucci"
-    },{
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
-      price: 1549,
-      strikedoffprice: 1799,
-      discount:"50%",
-      company : "balmain"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
-      price: 1249,
-      strikedoffprice: 1749,
-      discount:"50%",
-      company:"dolce & gabbana"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
-      price: 699,
-      strikedoffprice: 1245,
-      discount:"50%",
-      company:"alexander mcqueen"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
-      price: 749,
-      strikedoffprice: 1299,
-      discount:"50%",
-      company:"gucci"
-    },{
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
-      price: 1549,
-      strikedoffprice: 1799,
-      discount:"50%",
-      company : "balmain"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
-      price: 1249,
-      strikedoffprice: 1749,
-      discount:"50%",
-      company:"dolce & gabbana"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
-      price: 699,
-      strikedoffprice: 1245,
-      discount:"50%",
-      company:"alexander mcqueen"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
-      price: 749,
-      strikedoffprice: 1299,
-      discount:"50%",
-      company:"gucci"
-    },{
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
-      price: 1549,
-      strikedoffprice: 1799,
-      discount:"50%",
-      company : "balmain"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
-      price: 1249,
-      strikedoffprice: 1749,
-      discount:"50%",
-      company:"dolce & gabbana"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
-      price: 699,
-      strikedoffprice: 1245,
-      discount:"50%",
-      company:"alexander mcqueen"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
-      price: 749,
-      strikedoffprice: 1299,
-      discount:"50%",
-      company:"gucci"
-    },{
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/547347-va252-9772__1_900x.jpg?v=1677203213",
-      name: "BROWN BAG",
-      price: 1549,
-      strikedoffprice: 1799,
-      discount:"50%",
-      company : "balmain"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2157126_900x.jpg?v=1653069065",
-      name: "3.5 LEATHER CROSSBODY BAG",
-      price: 1249,
-      strikedoffprice: 1749,
-      discount:"50%",
-      company:"dolce & gabbana"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2340385_900x.jpg?v=1671656135",
-      name: "THE CURVE SMALL BUCKET BAG",
-      price: 699,
-      strikedoffprice: 1245,
-      discount:"50%",
-      company:"alexander mcqueen"
-    },
-    {
-      image_url:
-        "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gg0116s-30001563-011__1_900x.jpg?v=1677678765",
-       name: "GUCCI WOMENS CAT-EYE SHINY BLACK SUNGLASSES GG0116S-30001563-011",
-      price: 749,
-      strikedoffprice: 1299,
-      discount:"50%",
-      company:"gucci"
-    },
-    
+    var numberOfProducts = document.querySelector('.pDiv>div>h2');
 
-  ];
-  
-  display(shoesData);
+//cart object
+var data = JSON.parse(localStorage.getItem("carts"));
 
-function display(shoesData){
- 
-  document.querySelector("#rightpart").textContent=""
-    shoesData.map(function(ele){
-     
-
-
-        var div = document.createElement("div")
-        div.setAttribute("Id","cards")
-        
-        
-
-
-
-
-
-        var image = document.createElement("img")
-        image.setAttribute("src", ele.image_url)
-        image.setAttribute("alt", ele.name)
-        
-        // image.setAttribute("onclick", window.location.href = "productdetel.html")
-
-        var textcon = document.createElement("div")
-        textcon.setAttribute("id","textcon")
-
-       
-
-        var h5 = document.createElement("p")
-        h5.textContent = ele.name
-    
-        var priceBox = document.createElement("div")
-        priceBox.setAttribute("class", "priceBox");
-            var price = document.createElement("p")
-            price.textContent = "₹"+ ele.price
-
-            var MRP = document.createElement("p")
-            MRP.textContent = "₹"+ ele.strikedoffprice
-            MRP.setAttribute("class", "MRP")
-
-            var discount  = document.createElement("p")
-            discount.textContent="SAVE"+ele.discount
-            discount.style.color = '#f66161';
-
-
-          priceBox.append( MRP,price,discount)
-
-
-       // anc.append(image)
-        textcon.append(h5,priceBox)
-        div.append(image,textcon)
-
-        div.addEventListener("click" ,function(){
-          addToDetelpage(ele)
-        })
-       
-        // document.querySelector("#data").append(div)
-        rightpart.append(div)
-        document.querySelector("#data").append(rightpart)
-    });
+if(data.length != 0){
+    var len = data.length;
+    if(len == 1){
+        numberOfProducts.textContent = "My Cart ( "+len+" Item )";
+    }
+    else{
+        numberOfProducts.textContent = "My Cart ( "+len+" Items )";
+    }
 }
 
-// Sorting Function 
+products(data);
+var grandTotalDiv = document.querySelector('.GTotalDiv');
 
-function handleSalarySort(){
-      var selected = document.getElementById("sortSalary").value
-      if(selected==="htl") {
-        shoesData = shoesData.sort(function(a,b){
-          return b.price-a.price
-        })
-      }
-      if(selected==="lth") {
-        shoesData = shoesData.sort(function(a,b){
-          return a.price-b.price
-        })
-      }
-      display(shoesData);
-      // displayJobs(appliedJobs)
+var tP = document.createElement('p');
+tP.setAttribute("class","tP");
+var gTotal = document.createElement('p');
+gTotal.setAttribute("class","gTotal");
+
+//display cart object data
+function products(data){
+    document.querySelector('.productsDiv').innerHTML = "";
+    var len = data.length;
+    numberOfProducts.textContent = "My Cart ( "+len+" Item )";
+    var productsDiv = document.querySelector('.productsDiv');
+    var pDiv = document.querySelector(".pDiv");
+    var h = (350)+116*data.length;
+    if(data.length >= 2){
+        var h1 = h.toString();
+        // pDiv.style.height = h1+"px";
     }
+    data.map(function(ele,index){
 
-    function handleNameSort(){
-      var selected = document.getElementById("sortName").value
-      if(selected==="ascending"){
-        shoesData = shoesData.sort(function(a,b){
-          if(a.name>b.name) return 1;
-          if(a.name<b.name) return -1
-          return 0
-        })
-      }
-      if(selected==="descending"){
-        shoesData = shoesData.sort(function(a,b){
-          if(a.name>b.name) return -1;
-          if(a.name<b.name) return 1
-          return 0
-        })
-      }
-      display(shoesData);
-    }
+        var pD = document.createElement('div');
+        pD.setAttribute("class","pD");
+        pD.style.display = "flex";
 
+        var imgD = document.createElement('div');
+        imgD.setAttribute("class","imgD");
 
-    function handleRoleFilter(){
-      var selectedRole = document.getElementById("filterRole").value
+        var imgLink = document.createElement('img');
+        imgLink.setAttribute('class','imgLink');
+        imgLink.setAttribute('src',ele.image_url);
 
-      var filteredJobs = shoesData.filter(function (elem){
-        if(selectedRole===""){
-          return 1
-        }else{
-          return elem.company===selectedRole
+        imgD.append(imgLink);
+
+        var p_title = document.createElement('div');
+        p_title.setAttribute("class","p_title"); 
+
+        var p_name = document.createElement('a');
+        p_name.setAttribute('class','p_name');
+        p_name.textContent = ele.name.slice(0,20);
+
+        var s_size = document.createElement('span');
+        s_size.setAttribute('class','s_size');
+        s_size.textContent = "Size Men Upper: "+ele.size;
+
+        var b1 = document.createElement("br");
+
+        p_title.append(p_name,b1,s_size);
+
+        var p_quantity = document.createElement('div');
+        p_quantity.setAttribute('class','p_quantity');
+
+        var minus = document.createElement('a');
+        minus.setAttribute("class","minus");
+        minus.textContent = "−";
+
+        var quantity = document.createElement('span');
+        quantity.setAttribute('class','quantity');
+        var quan = 1;
+        quantity.textContent = quan;
+
+        var plus = document.createElement('a');
+        plus.setAttribute("class","plus");
+        plus.textContent = "+";
+
+        var remove = document.createElement('a');
+        remove.setAttribute("class","remove");
+        remove.textContent = "Remove";
+
+        remove.addEventListener('click',function(){
+            deletefunction(index);
+            updateTotalMinus(t);
+        });
+
+        minus.addEventListener('click',dec);
+        plus.addEventListener('click',inc);
+        
+        function dec(){
+            if(quan == 1){
+                quan = 1;
+                quantity.textContent = quan;
+            }
+            else{
+                quan = quan - 1;
+                quantity.textContent = quan;
+                displayDataMinus(quan);
+            }
         }
-      })
-      display(filteredJobs);
-    }
-   
- 
-    // //
 
-function addToDetelpage(elem){
-  // productdetelArr.push(elem)
-  localStorage.setItem("productDetel",JSON.stringify(elem))
-  // console.log(productdetelArr)
-  window.location.href="productDetelpage.html"
+        function inc(){
+            quan = quan + 1;
+            quantity.textContent = quan;
+            displayDataPlus(quan);
+        }
+
+        var b2 = document.createElement("br");
+        p_quantity.append(minus,quantity,plus,b2,remove);
+
+        var priceD = document.createElement('div');
+        priceD.setAttribute('class','priceD');
+
+        var price = document.createElement('span');
+        price.setAttribute('class','price');
+        price.textContent = "Price : ";
+
+        // var p = ele.price.split('');
+        // var pri = p[2] + p[3] + p[4];
+        var reducedprice = ele.price;
+
+        var m = +ele.mrp
+        var mrp = m;
+        var maxprice = reducedprice;
+
+        var pricespan = document.createElement('span');
+        pricespan.setAttribute('class','pricespan');
+        pricespan.textContent = "Rs "+maxprice;
+        var mp = maxprice;
+
+        var discount = document.createElement('span');
+        discount.setAttribute('class','discount');
+        discount.textContent = "Discount : ";
+
+        var discountspan = document.createElement('span');
+        discountspan.setAttribute('class','discountspan');
+        var d = maxprice - reducedprice;
+        discountspan.textContent = "- Rs "+d;
+        var n = d;
+
+        var shipping_fee = document.createElement('span');
+        shipping_fee.setAttribute('class','shipping_fee');
+        shipping_fee.textContent = "Shipping Fee : ";
+
+        // var shipping = 20;
+        var shippingspan = document.createElement('span');
+        shippingspan.setAttribute('class','shippingspan');
+        // shippingspan.textContent = "Rs "+shipping;
+        shippingspan.textContent = "FREE";
+        // var s = shipping;
+
+        var b3 = document.createElement("br");
+        var b4 = document.createElement("br");
+        priceD.append(
+            price,
+            pricespan,
+            b3,
+            
+            b4,
+            );
+
+        var tpDiv = document.createElement('div');
+        tpDiv.setAttribute('class','tpDiv');
+
+        var tPrice = document.createElement('span');
+        tPrice.setAttribute('class','tPrice');
+        // var total = reducedprice + shipping;
+        // var t = reducedprice + shipping;
+
+        var total = reducedprice;
+        var t = reducedprice;
+        tPrice.textContent = "Rs "+total;
+        console.log(total);
+
+        var pRules = document.createElement('p');
+        pRules.setAttribute('class','pRules');
+        pRules.textContent = "Inclusive of all applicable taxes";
+
+        var b5 = document.createElement('br');
+        tpDiv.append(tPrice,b5,pRules);
+
+        pD.append(imgD,p_title,p_quantity,priceD,tpDiv);
+
+        var bottomline = document.createElement("hr");
+        productsDiv.append(pD,bottomline);
+        
+        function displayDataMinus(quan){
+            total = total -parseInt(t);
+            maxprice = maxprice - mp;
+            d = d - n;
+            // shipping = shipping - s;
+            // displayPrice(total,t);
+            tPrice.textContent = "Rs "+total;
+            discountspan.textContent = "- Rs "+d;
+            pricespan.textContent = "Rs "+maxprice;
+            // shippingspan.textContent = "Rs "+shipping;
+            
+            updateTotalMinus(t);
+        }
+
+        function displayDataPlus(quan){
+            total = parseInt(total) + parseInt(t);
+            maxprice = parseInt(maxprice) + parseInt(mp);
+            d = d + n;
+            // shipping = shipping + s;
+            // displayPrice(total,t);
+            tPrice.textContent = "Rs "+total;
+            discountspan.textContent = "- Rs "+d;
+            pricespan.textContent = "Rs "+maxprice;
+            // shippingspan.textContent = "Rs "+shipping;
+            
+            updateTotalPlus(t);
+            console.log(t);
+        }
+    })
 }
 
+// display products total price function
+var total = 0;
+function updateTotal(){
+    var pD = document.getElementsByClassName("pD");
+    for(var i=0; i<pD.length; i++){
+        var cartRow = pD[i];
+        var priceElement = cartRow.getElementsByClassName("tPrice")[0];
+        var quantityElement = cartRow.getElementsByClassName("quantity")[0];
+
+        var price = parseInt(priceElement.innerText.replace('Rs',''));
+        var quantity = parseInt(quantityElement.innerText);
+
+        total = total + (price * quantity);
+    }
+    tP.textContent = "Total : Rs "+ total;
+    gTotal.textContent = "Grand Total : Rs "+ total;
+}
+
+// display products total price function after pressing minus button
+function updateTotalMinus(t){
+    total = total - parseInt(t);
+    tP.textContent = "Total : Rs "+ total;
+    gTotal.textContent = "Grand Total : Rs "+ parseInt(total);
+}
+
+// display products total price function after pressing plus button
+function updateTotalPlus(t){
+    total = total +parseInt(t);
+    tP.textContent = "Total : Rs "+ total;
+    gTotal.textContent = "Grand Total : Rs "+ total;
+}
+
+var count = 0;
+function deletefunction(index){
+    data.splice(index,1);
+    localStorage.setItem("carts",JSON.stringify(data));
+    products(data);
+}
+
+updateTotal();
+
+// var t = document.querySelector(".tPrice").textContent;
+// t = t[3]+t[4]+t[5];
+// var num = t.split("").map(Number);
+// var j = num.join('');
+// var n = parseInt(j);
+// n = n*data.length;
+// tP.textContent = "Total : Rs "+ n;
+// gTotal.textContent = "Grand Total : Rs "+ n;
+
+// function displayPrice(total,t){
+//     var nums = total + n - t;
+//     tP.textContent = "Total : Rs "+ nums;
+//     gTotal.textContent = "Grand Total : Rs "+ nums;
+// }
+
+var rules = document.createElement('p');
+rules.setAttribute("class","rules");
+rules.textContent = "Inclusive of all the applicable taxes";
+
+var place = document.createElement('button');
+place.setAttribute("class","place");
+place.textContent = "Place Order";
+place.addEventListener("click",()=>{
+    window.location.href = "Information.html";
+}
+
+)
+
+grandTotalDiv.append(rules,gTotal,place);
+
+
+var arrow = document.querySelector('.arrow');
+arrow.addEventListener('click',backTo);
+
+// function backTo(){
+//     window.location.href = "singleprod.html";
+// }
+
+//order database function
+
+
+
+function order(){
+    var productArr = [];
+    var productSize = [];
+    var productColor = [];
+    data.map(function(ele){
+        productArr.push(ele.name);
+        productSize.push(ele.size);
+        productColor.push(ele.color_family);
+    })
+
+    var productQuantity = [];
+    var pD = document.getElementsByClassName("pD");
+    for(var i=0; i<pD.length; i++){
+        var cartRow = pD[i];
+        var quantityElement = cartRow.getElementsByClassName("quantity")[0];
+        var quantity = parseInt(quantityElement.innerText);
+        productQuantity.push(quantity);
+    }
+    
+    var gT = document.querySelector(".gTotal");
+    gT = gT.innerHTML.replace("Grand Total : Rs ","");
+    var g = parseInt(gT);
+    var orderObj = {
+        product_List : productArr,
+        product_quantity_List : productQuantity,
+        product_size_List : productSize,
+        product_color_List : productColor,
+        total_Price : g,
+    };
+    orderArr.push(orderObj);
+    localStorage.setItem("orderDatabase",JSON.stringify(orderArr));
+    window.location.href = "./address.html";
+    console.log(orderArr);
+}
+
+
+function order1(){
+    var productArr = [];
+    var productSize = [];
+    var productColor = [];
+    data.map(function(ele){
+        productArr.push(ele.name);
+        productSize.push(ele.size);
+        productColor.push(ele.color_family);
+    })
+
+    var productQuantity = [];
+    var pD = document.getElementsByClassName("pD");
+    for(var i=0; i<pD.length; i++){
+        var cartRow = pD[i];
+        var quantityElement = cartRow.getElementsByClassName("quantity")[0];
+        var quantity = parseInt(quantityElement.innerText);
+        productQuantity.push(quantity);
+    }
+    
+    var gT = document.querySelector(".gTotal");
+    gT = gT.innerHTML.replace("Grand Total : Rs ","");
+    var g = parseInt(gT);
+    var orderObj = {
+        product_List : productArr,
+        product_quantity_List : productQuantity,
+        product_size_List : productSize,
+        product_color_List : productColor,
+        total_Price : g,
+    };
+    orderArr.push(orderObj);
+    localStorage.setItem("orderDatabase",JSON.stringify(orderArr));
+    // window.location.href = "./address.html";
+    console.log(orderArr);
+}
+
+
+
+
+var userCheck = localStorage.getItem("system");
+place.addEventListener('click',placeOrder);
+var orderArr = [];
+console.log(orderArr);
+
+function placeOrder(){
+    if(userCheck != "online"){
+        order1();
+        window.location.href = "login1.html";
+    }
+    else{
+        if(data.length == 0){
+            alert("Please add product to cart.");
+        }
+        else{
+            order();
+        }
+    }
+}
 
 
 </script>
 
-<!-- -------------------------Footer---------------------- -->
-<footer>
-  <div>
-    <p>ABOUT US</p>
+
+ <!-- -------------------------Footer---------------------- -->
+ <footer>
     <div>
+      <p>ABOUT US</p>
       <div>
-        <p>Contact Us</p>
-        <p>Frequently Asked Questions</p>
-        <p>Shipping & Returns</p>
-        <p>Pre-Owned Guide</p>
+        <div>
+          <p>Contact Us</p>
+          <p>Frequently Asked Questions</p>
+          <p>Shipping & Returns</p>
+          <p>Pre-Owned Guide</p>
+        </div>
+        <div>
+          <p>Sell on Bluefly</p>
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+          <p>Do not sell my personal information</p>
+        </div>
       </div>
+    </div>
+    <div>
+      <p>SIGN UP AND SAVE</p>
+      <p>Subscribe to get exclusive offers on designer brands</p>
+      <form>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter email"
+        />
+        <input type="submit" value="Subscribe" />
+      </form>
       <div>
-        <p>Sell on Bluefly</p>
-        <p>Privacy Policy</p>
-        <p>Terms & Conditions</p>
-        <p>Do not sell my personal information</p>
+        <img src="images/instagram.svg" alt="" />
+        <img src="images/facebook.svg" alt="" />
       </div>
     </div>
-  </div>
+  </footer>
   <div>
-    <p>SIGN UP AND SAVE</p>
-    <p>Subscribe to get exclusive offers on designer brands</p>
-    <form>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Enter email"
-      />
-      <input type="submit" value="Subscribe" />
-    </form>
-    <div>
-      <img src="images/instagram.svg" alt="" />
-      <img src="images/facebook.svg" alt="" />
+    <img
+      src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820"
+      alt=""
+    />
+    <p>
+      © 2022 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS
+      RESERVED.
+    </p>
+  </div>
+
+  <!--------------------------- cart section  ---------------------------->
+  <div id="overlay"></div>
+  <div id="popup">
+    <div class="popupHead">
+      <p>CART</p>
+      <p id="popupclose">X</p>
+    </div>
+
+    <div class="popupContent"></div>
+
+    <div class="popupBottom">
+      <div>
+        <span>SUBTOTAL</span>
+        <span class="cartTotal"></span>
+      </div>
+      <p>Shipping, taxes, and discounts codes calculated at checkout.</p>
+      <button id="checkoutButton">CHECK OUT</button>
     </div>
   </div>
-</footer>
-<div>
-  <img
-    src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820"
-    alt=""
-  />
-  <p>
-    © 2022 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS
-    RESERVED.
-  </p>
-</div>
-
-<!--------------------------- cart section  ---------------------------->
-<div id="overlay"></div>
-<div id="popup">
-  <div class="popupHead">
-    <p>CART</p>
-    <p id="popupclose">X</p>
-  </div>
-
-  <div class="popupContent"></div>
-
-  <div class="popupBottom">
-    <div>
-      <span>SUBTOTAL</span>
-      <span class="cartTotal"></span>
-    </div>
-    <p>Shipping, taxes, and discounts codes calculated at checkout.</p>
-    <button id="checkoutButton">CHECK OUT</button>
-  </div>
-</div>
 </body>
 </html>
 <script>
@@ -1302,14 +1525,14 @@ document.querySelector("form").addEventListener("submit", subscribe);
 let subscriberdata = JSON.parse(localStorage.getItem("emaildata")) || [];
 
 
-function subscribe(event) {
-  event.preventDefault();
-  let data = document.querySelector("#email").value;
-  subscriberdata.push(data);
-  alert("Subscribe Succesfully")
- localStorage.setItem("emaildata",JSON.stringify(subscriberdata))
- document.querySelector("#email").value = ""
- 
-}
+  function subscribe(event) {
+    event.preventDefault();
+    let data = document.querySelector("#email").value;
+    subscriberdata.push(data);
+    alert("Subscribe Succesfully")
+   localStorage.setItem("emaildata",JSON.stringify(subscriberdata))
+   document.querySelector("#email").value = ""
+   
+  }
 </script>
 <script src="cartPopup.js"></script>

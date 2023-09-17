@@ -12,7 +12,7 @@ header{
 
 }
 #logoheader{
-    width: 70%;
+    width: 100%;
     display: flex;
     height: 4vh;
     justify-content: center;
@@ -34,9 +34,10 @@ header{
    height: 3vh;
 }
 #menuheader{
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 10px;
 
 }
 #menuheader>ul{
@@ -53,12 +54,15 @@ header{
 }
 #menuheader>ul>li>a{
     text-decoration: none;
-    color: #413939;
+    color: #322d2d;
 
 
 
 }
-
+/* #menuheader ul li{
+   transition: transform 0.5s ;
+  
+} */
 
 
 
@@ -87,7 +91,7 @@ header{
    
 }
 .shoes1>div>img{
-    width: 80%;
+    width: 100%;
 }
 
 .shoes:hover .shoes1{
@@ -128,14 +132,26 @@ a:hover .shoes1{
      #logoheader>div+div{
         height: 3vh;
         display: flex;
-        gap: 10%;
+        justify-content: space-between;
+        gap: 5%;
     }
     #logoheader{
-        gap: 5%;
-        flex-wrap: wrap;
+        gap: 3px;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        /* flex-wrap: wrap; */
+    
     }
     #menuheader>ul{
         /* display: none; */
+    }
+    .logo{
+        /* margin-left: -90px; */
+        width: 80%;
+    }
+    #search{
+        display: none;
     }
 }
 

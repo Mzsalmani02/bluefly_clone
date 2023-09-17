@@ -21,14 +21,7 @@ body{
     animation: blackslide 3s linear infinite;
  }
   
-/* @keyframes blackslide{
-    0%{
-       margin-left: -100%;
-    }
-    50%{
-        
-    }
-} */
+
  #mainslider{
     height: 450px;
     background-image: url("images/11.webp");

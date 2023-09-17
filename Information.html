@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <style>
+        #container {
+            display: flex;
+            width: 100%;
+            height: vh;
+        }
+
+        #left-side {
+            width: 100%;
+            /* border: 1px solid red; */
+            background-color: white;
+        }
+
+        #head {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #left-side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* #right-side {
+            width: 50%;
+            /* border: 1px solid green; */
+        /* background-color: #fafafa; */
+        /* } */
+
+        h2,
+        h4 {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            font-size: 1.2857142857em;
+            line-height: 1.3em;
+            font-weight: 350;
+        }
+
+        h2 h4 {
+            margin-top: 5px;
+        }
+
+        h4 {
+            font-size: small;
+            display: inline;
+        }
+
+        form select {
+            display: block;
+            margin: 10px;
+        }
+
+        .fullWidth {
+            display: block;
+            width: 98.4%;
+            height: 40px;
+        }
+
+        #country {
+            display: block;
+            margin-left: -0px;
+            /* width: 540px; */
+            /* margin-right: 50px; */
+            padding-right: 50px;
+        }
+
+        form {
+            gap: 10px;
+        }
+
+        #state {
+            display: inline;
+        }
+
+        #name input {
+            width: 50%;
+            height: 40px;
+        }
+
+        #name {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        #check-box {
+            width: 18px;
+            height: 18px;
+        }
+
+        #bottomGap {
+            margin-bottom: 10px;
+        }
+
+        .incLen {
+            height: 40px;
+        }
+
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        #botLen {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #button {
+            background-color: black;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            height: 60px;
+            width: 180px;
+            border-radius: 5px;
+        }
+
+        #cheKmail {
+            margin-top: 10px;
+            margin-right: -0px;
+        }
+
+
+        /* cart page css */
+
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Style the main content area */
+        main {
+            padding: 20px;
+        }
+
+        /* Style the table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table th,
+        table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Style the table footer */
+        table tfoot tr:first-child {
+            font-weight: bold;
+        }
+
+        /* Style the checkout button */
+        a {
+            /* background-color: #333; */
+            color: black;
+            display: block;
+            /* margin-top: 20px; */
+            /* padding: 10px; */
+            text-align: center;
+            text-decoration: none;
+            width: 100px;
+        }
+
+        a:hover {
+            background-color: #666;
+        }
+
+
+        @media only screen and (min-width: 421px) and (max-width: 720px) {
+            #container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #left-side {
+                width: 100%;
+            }
+
+            
+
+            #button {
+                width: 120px;
+                height: 50px;
+            }
+        }
+
+        @media only screen and (min-width: 0px) and (max-width: 420px) {
+            #head {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #left-side {
+                width: 90%;
+            }
+
+            #right-side {
+                width: 90%;
+            }
+
+            #button {
+                width: 90px;
+                height: 30px;
+            }
+
+            #btnPay {
+                padding: -5px;
+                /* margin: 55px; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        <div>
+           <a href="index.html">
+            <img id="image" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?233294"
+                alt="Bluefly">
+           </a> 
+        </div>
+        <div id="container">
+            <div id="left-side">
+                <div>
+                    <div id="head">
+                        <h2>Contact Information</h2>
+                        <h4>Already have an account? <span>Log in</span></h4>
+                    </div>
+                    <input type="text" id="email" class="fullWidth" placeholder="Email">
+                    <div id="cheKmail">
+                        <input type="checkbox" id="check-box">
+                        <h4>Email me with news and offers</h4>
+                    </div>
+                    <!-- <form> -->
+                    <h2>Shipping Address</h2>
+                    <select name="Country/region" id="country" class="fullWidth">
+                        <option value="india">India</option>
+                        <option value="nepal">Nepal</option>
+                        <option value="russia">Russia</option>
+                        <option value="japan">Japan</option>
+                    </select>
+                    <div id="name">
+                        <input type="text" placeholder="First name" id="fname">
+                        <input type="text" placeholder="Last name" id="lname">
+                    </div>
+                    <input type="text" placeholder="Address" class="fullWidth" id="bottomGap">
+                    <input type="text" placeholder="Apartment, suit, etc.(optional)" class="fullWidth" id="apartment">
+                    <input type="text" placeholder="City" class="incLen" id="city">
+                    <select name="State" class="incLen" id="state">
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    </select>
+                    <input type="number" placeholder="ZIP code" class="incLen" id="zip">
+                    <input type="number" placeholder="Phone" class="fullWidth" id="bottomGap">
+                    <!-- </form> -->
+                    <div id="botLen">
+                        <!-- <span><i class="arrow left"></i></span> -->
+                       <a href="CartPageNew.html">
+                        <h4><span><i class="arrow left"></i></span> Return to cart</h4>
+                       </a> 
+                        <!-- <a href="Payment.html"> -->
+                        <input type="submit" id="button">
+                        <!-- </a> -->
+                        <!-- <button type="submit"><a href="Payment.html">Continue</a></button> -->
+                        <!-- <input type="submit" > -->
+
+                        <!-- <button>Continue to shopping</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
+
+<script>
+
+
+    // cart page end
+
+
+    // function clicme(){
+    document.querySelector("form").addEventListener("submit", data);
+    // form.addEventListener("submit",data);
+    // }
+
+    function emptyOrNot(email, country, fname, lname, address, apartment, city, state, zip, phone) {
+        if (email == "" || country == "" || fname == "" || lname == "" || address == "" || apartment == "" || city == "" || state == "" || zip == "" || phone == "") {
+            alert("Fill All Fields")
+        }
+
+    }
+
+    var objArr = JSON.parse(localStorage.getItem("information")) || [];
+    // console.log(objArr);
+    function data() {
+        event.preventDefault();
+        var email = document.getElementById("email").value;
+        var country = document.getElementById("country").value;
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var address = document.getElementById("bottomGap").value;
+        var apartment = document.getElementById("apartment").value;
+        var city = document.getElementById("city").value;
+        var state = document.getElementById("state").value;
+        var zip = document.getElementById("zip").value;
+        var phone = document.getElementById("bottomGap").value;
+
+        var obj = {
+            email: email,
+            country: country,
+            fname: fname,
+            lname: lname,
+            address: address,
+            apartment: apartment,
+            city: city,
+            state: state,
+            zip: zip,
+            phone: phone
+        }
+        emptyOrNot(email, country, fname, lname, address, apartment, city, state, zip, phone);
+        objArr.push(obj);
+        console.log(objArr);
+        localStorage.setItem("information", JSON.stringify(objArr));
+        window.location.href = "Payment.html";
+    }
+</script>
